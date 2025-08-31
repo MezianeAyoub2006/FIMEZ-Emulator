@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "name": "mingw64 GCC",
+      "includePath": [
+        "C:\\Users\\mezia\\Documents\\Libs\\SDL3\\x86_64-w64-mingw32\\include"
+      ],
+      "defines": [],
+      "compilerPath": "C:\\Users\\mezia\\Documents\\w64devkit\\bin\\gcc.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}

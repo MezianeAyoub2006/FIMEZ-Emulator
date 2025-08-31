@@ -1,0 +1,9 @@
+ADD     00 | addition entre un registre et une valeur
+ADD     01 | addition entre deux registres
+LOAD    00 | chargement d'une valeur dans un registre 
+LOAD    01 | chargement d'une valeur de la RAM dans un registre 
+LOAD    10 | chargement d'une valeur de la ROM dans un registre 
+LOAD    11 | chargement d'un registre dans un registre 
+STORE   00 | stockage d'une valeur dans la RAM
+STORE   01 | stockage d'un registre dans la RAM 
+
