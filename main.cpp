@@ -5,10 +5,8 @@
 int main() {
     CPU cpu;
     Interpreter interpreter(cpu);
-    interpreter.load00(0, 10);
-    writeBits(cpu.readRegister(0));
-    interpreter.load00(1, 15);
-    writeBits(cpu.readRegister(1));
-    interpreter.add01(0, 1);
-    writeBits(cpu.readRegister(0));
+    std::cout << (int)cpu.readRam(10) << std::endl;
+    interpreter.execute(Instruction{8, 3, 10, 0});
+    std::cout << (int)cpu.readRam(10) << std::endl;
+
 }

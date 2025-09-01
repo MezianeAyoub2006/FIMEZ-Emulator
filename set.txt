@@ -1,0 +1,12 @@
+name    |  label  |    opcode     | param1 | param2 | param3 |         effect         
+ADD00   | ADD     | 000000 00 (0) | reg    | const  | ------ | reg  = reg  + const    
+ADD01   | ADD&    | 000000 01 (1) | reg.1  | reg.2  | ------ | reg.1 = reg.1 + reg.2   
+LOAD00  | LOAD    | 000001 00 (4) | reg    | const  | ------ | reg  = const            
+LOAD01  | LOAD#   | 000001 01 (5) | reg    | addr   | ------ | reg  = RAM[addr]       
+LOAD10  | LOAD*   | 000001 10 (6) | reg    | addr   | ------ | reg  = ROM[addr]        
+LOAD11  | LOAD&   | 000001 11 (7) | reg.1  | reg.2  | ------ | reg.1 = reg.2           
+STORE00 | STORE   | 000010 00 (8) | const  | addr   | ------ | RAM[addr] = const      
+STORE01 | STORE&  | 000010 01 (9) | reg    | addr   | ------ | RAM[addr] = reg        
+
+
+

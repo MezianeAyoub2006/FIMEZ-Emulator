@@ -1,4 +1,5 @@
 #include "../CPU/cpu.h"
+#include "../instruction/instruction.h"
 
 class Interpreter {
 private:
@@ -11,4 +12,9 @@ public:
     void load01(int register_, uint16_t ram_addr);
     void load10(int register_, uint16_t rom_addr);
     void load11(int first_register, int second_register);
+    void store00(int8_t value, uint16_t ram_addr);
+    void store01(int register_, uint16_t ram_addr);
+    void compare00(int register_, int8_t value);
+    void compare01(int first_register, int second_register);
+    void execute(Instruction instruction);
 };
